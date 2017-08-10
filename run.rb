@@ -3,6 +3,7 @@ require_relative './user'
 require_relative './tweet'
 
 
+
 coffee_dad = User.new('coffee_dad')
 other_user = User.new('some_user')
 
@@ -15,4 +16,6 @@ coffee_dad.post_tweet('#coffee')
 
 
 
-Pry.start
+binding.pry
+
+"hi"
