@@ -4,6 +4,24 @@
 - Object relationships, has many/belongs to
 - Single source of truth
 
+## Overview
+
+class_room = ClassRoom.new
+
+class_room.students
+# => ['ben', 'matt', ..]
+# => [<Student>, <Student>]
+
+
+class Student
+
+end
+Student.new(name, class_room)
+
+Student.new('Alex')
+Student.new(String.new("Alex"))
+
+
 
 ## Deliverables
 1. Create a User class. A user should initialize with a username and have a reader method for the username. A user should have a method called `#tweets` that returns an array of Tweet instances.
