@@ -38,6 +38,9 @@ class User
 
   def liked_tweets
     # return an array of all the tweets a user has liked
+    self.likes.map do |like|
+      like.tweet
+    end
 
   end
 
