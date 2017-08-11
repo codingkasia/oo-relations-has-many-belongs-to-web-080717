@@ -24,5 +24,22 @@ class User
     # @tweets << tweet
   end
 
+  def likes
+    # look through all of the likes
+    Like.all.select do |like|
+      like.user == self
+    end
+    # return a collection of only the likes that belong to this user
+  end
+
+  def like_tweet(tweet)
+    Like.new(self, tweet)
+  end
+
+  def liked_tweets
+    # return an array of all the tweets a user has liked
+
+  end
+
 
 end

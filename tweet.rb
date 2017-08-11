@@ -11,7 +11,6 @@ class Tweet
   end
 
 
-
   def initialize(message, user)
     @message = message
     @user = user
